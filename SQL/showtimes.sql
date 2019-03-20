@@ -35,9 +35,7 @@ CREATE TABLE IF NOT EXISTS `showtimes` (
   `cid` varchar(13) NOT NULL,
   `discount_id` varchar(13) NOT NULL,
   `time` time(0) NOT NULL,
-  PRIMARY KEY (`sid`),
-  FOREIGN KEY (`mid`) REFERENCES movies(`mid`),
-  FOREIGN KEY (`cid`) REFERENCES cinemas(`cid`)
+  PRIMARY KEY (`sid`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
