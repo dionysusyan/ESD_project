@@ -18,8 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `books`
+
 --
 CREATE DATABASE IF NOT EXISTS `showtimes` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `showtimes`;
@@ -39,8 +38,6 @@ CREATE TABLE IF NOT EXISTS `showtimes` (
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `movies`
-
 
 INSERT INTO `showtimes` (`sid`, `mid`,`cid`, `discount_id`, `time`) VALUES
 ('1', '1', '1', '5', '13:00:00'),
@@ -54,7 +51,12 @@ INSERT INTO `showtimes` (`sid`, `mid`,`cid`, `discount_id`, `time`) VALUES
 ('9', '3', '4', '5', '14:00:00'),
 ('10', '4', '5', '2', '17:30:00'),
 ('11', '5', '6', '2', '18:00:00'),
-('12', '6', '1', '5', '15:30:00');
+('12', '3', '5', '4', '10:30:00'),
+('13', '3', '5', '5', '14:00:00'),
+('14', '3', '5', '2', '17:30:00'),
+('15', '3', '5', '2', '18:00:00'),
+('16', '3', '5', '1', '20:30:00'),
+('17', '3', '5', '3', '23:30:00');
 
 COMMIT;
 

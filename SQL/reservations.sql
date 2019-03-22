@@ -32,19 +32,24 @@ USE `reservations`;
 
 DROP TABLE IF EXISTS `reservations`;
 CREATE TABLE IF NOT EXISTS `reservations` (
-  `rid` char(13) NOT NULL, /* reservation id */
-  `uid` char(13) NOT NULL, /* user id */
-  `sid` char(13) NOT NULL, /* showtime id */
+  `rid` int(13) NOT NULL AUTO_INCREMENT, /* reservation id */
+  `uid` varchar(13) NOT NULL,
+  `mid` varchar(13) NOT NULL, 
+  `cid` varchar(13) NOT NULL, 
+  `showtime` time(0) NOT NULL, 
+  `quantity` int(10) NOT NULL, 
+  `discounted_price` float(13) NOT NULL,
+  `status` int(10) NOT NULL, /* 1 means success, 0 means failure */
   PRIMARY KEY (`rid`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 --
 
-INSERT INTO `reservations` (`rid`, `uid`, `sid`) VALUES
-('1', '2', '1' ),
-('2', '2', '2' ),
-('3', '3', '3' );
+INSERT INTO `reservations` (`rid`, `uid`, `mid`, `cid`, `showtime`, `quantity`, `discounted_price`, `status`) VALUES
+(1, '2', '1', '1', '13:00:00', 1, 6.25, 1 ),
+(2, '3', '1', '1', '13:00:00', 2, 6.25, 1 );
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
