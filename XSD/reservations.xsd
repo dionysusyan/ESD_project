@@ -4,7 +4,7 @@
 
         <complexType name="Reservation">
             <sequence>
-                <element name="rid" type="string" minOccurs="1" />
+                <element name="rid" type="int" minOccurs="1" />
                 <element name="uid" type="string" minOccurs="1" />
                 <element name="mid" type="string" minOccurs="1" />
                 <element name="cid" type="string" minOccurs="1" />
