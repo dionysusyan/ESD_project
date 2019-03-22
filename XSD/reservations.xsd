@@ -6,7 +6,12 @@
             <sequence>
                 <element name="rid" type="string" minOccurs="1" />
                 <element name="uid" type="string" minOccurs="1" />
-                <element name="sid" type="string" minOccurs="1" />
+                <element name="mid" type="string" minOccurs="1" />
+                <element name="cid" type="string" minOccurs="1" />
+                <element name="showtime" type="time" minOccurs="1" />
+                <element name="quantity" type="int" minOccurs="1" />
+                <element name="discounted_price" type="float" minOccurs="1" />
+                <element name="status" type="int" minOccurs="1" />
             </sequence>
         </complexType>
         <element name="Reservation" type="tns:Reservation" />
