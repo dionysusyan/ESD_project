@@ -1,0 +1,3 @@
+import webbrowser
+
+webbrowser.open('https://api.telegram.org/bot706256156:AAFjCPB4IsmMxrh8u6GheEzAbNldb9Znhuo/sendMessage?chat_id=-338837298&text=Hello+Everyone!+Its+Thursday+and+Movietigo+has+refreshed+the+cinema+discount+times+for+the+week!+Make+Sure+to+book+your+slots+before+its+gone!')
