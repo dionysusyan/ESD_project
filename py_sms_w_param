@@ -1,0 +1,20 @@
+import sys
+from twilio.rest import Client
+
+
+account_sid = 'AC3dd69fb0086d7c62dcc459d0ede43abf'
+auth_token = '2ff889c23114ac6446f20c0dce0c2e2c'
+client = Client(account_sid, auth_token)
+
+
+
+text = sys.argv[1]
+number = sys.argv[2]
+
+
+
+message = client.messages                 .create(
+                     body=text,
+                     from_='+14023822352',
+                     to=number
+                 )
